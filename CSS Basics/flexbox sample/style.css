@@ -1,0 +1,32 @@
+.wrapper {
+    box-sizing: border-box;
+}
+
+.lower {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 30vh;
+    text-align: justify;
+    align-items: center;
+    font-family: Arial;
+}
+
+h1 {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url("https://www.nawpic.com/media/2020/rick-and-morty-4k-nawpic.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: lightblue;
+    background-size: 100%;
+    height: 70vh;
+}

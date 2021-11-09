@@ -1,0 +1,155 @@
+body {
+    background-color: lightgray;
+}
+
+.wrapper {
+    width: 100vw;
+}
+
+.content {
+    width: 65vw;
+    background-color: white;
+    font-family: "ORF ON", Arial, Helvetica, Lucida Sans Unicode, Lucida Grande, sans-serif;
+    font-feature-settings: "liga", "kern";
+    margin-left: 50px;
+    height: 100vh;
+}
+
+.uppernavigation {
+    display: none;
+}
+
+.unlist {
+    display: flex;
+    flex-direction: row;
+}
+
+.unlistItems {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.ueberblick {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    margin-right: 20px;
+}
+
+.item {
+    margin-right: 60px;
+}
+
+.header {
+    background-color: rgb(182, 44, 44);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.lowernavigation {
+    display: none;
+}
+
+.lnlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lnlistItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.text {
+    font-size: x-large;
+    color: white;
+    margin-left: 50px;
+}
+
+.logo {
+    width: 150px;
+    padding-left: 10px;
+}
+
+.lnlogo {
+    margin-right: 20px;
+}
+
+.greybar {
+    position: relative;
+    height: 10px;
+    background-color: lightgray;
+}
+
+.image {
+    background-image: url("./image/orf_b1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.contentheader {
+    position: relative;
+    height: auto;
+    background-color: white;
+    width: 80%;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+.contentheader h1 {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 10px;
+}
+
+.contentheader p {
+    text-align: start;
+    font-size: medium;
+    font-weight: bold;
+    color: grey;
+}
+
+.contenttext {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.contenttext p {
+    font-weight: 700;
+}
+
+@media (min-width:1800px) {
+    .uppernavigation {
+        background-color: rgb(163, 13, 13);
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .lowernavigation {
+        background-color: rgb(131, 5, 5);
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 20px;
+    }
+}

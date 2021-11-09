@@ -1,0 +1,46 @@
+        .welcome {
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 460px;
+            height: 300px;
+            padding-top: 20px;
+            padding-left: 20px;
+            background-color: lightblue;
+        }
+        
+        .welcome h1 {
+            font-size: 25px;
+        }
+        
+        .qube1 {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 240px;
+            left: 400px;
+            background-color: orange;
+        }
+        
+        .qube2 {
+            height: 50px;
+            width: 50px;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            background-color: red;
+        }
+        
+        .lowerbar {
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            height: 30vh;
+            text-align: justify;
+            align-items: center;
+            font-family: Arial;
+            margin-top: 50px;
+            width: auto;
+            height: auto;
+            background-color: yellow;
+        }

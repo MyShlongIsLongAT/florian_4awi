@@ -1,0 +1,54 @@
+.upperbar {
+    padding-right: 50px;
+    height: 150px;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: yellow;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-align: justify;
+    align-items: center;
+}
+
+.text {
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.welcome {
+    margin-top: 170px;
+    margin-left: 20px;
+    width: 400px;
+    height: 300px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: lightblue;
+}
+
+.welcome h1 {
+    font-size: 25px;
+}
+
+.qube1 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 390px;
+    left: 340px;
+    background-color: orange;
+}
+
+.qube2 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: violet;
+}
