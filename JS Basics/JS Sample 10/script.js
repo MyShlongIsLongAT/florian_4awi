@@ -1,5 +1,5 @@
 let config = {
-    start: 2,
+    offSetLastMonth: 2,
     months: [
         { name: 'Jan', days: 31 },
         { name: 'Feb', days: 28 },
@@ -35,31 +35,41 @@ function getDayFormatted(numberOfDay) {
 
 }
 
-function printDays(month) {
+function printoffSet(getOffSet, month) {
+    let offSet = getOffSet;
+    let offSetString = "";
+    for (let i = 0; i < offSet; i++) {
+        offSetString += " - | ";
+    }
+    printDays(offSet, month, offSetString);
+}
+
+function printDays(offSet, month, offSetString) {
+    offSetForPrint = offSet;
     let week = "";
     for (let i = 1; i <= month.days; i++) {
         let formatedNumber = getDayFormatted(i);
-        week += formatedNumber + " | "
-        if (i % 7 == 0) {
-            console.log(week)
-            week = ""
-        }
-        if (i == month.days) {
+        week += formatedNumber + " | ";
+        if (i + offSetForPrint == 7) {
+            week = offSetString + week;
             console.log(week);
+            week = "";
+        } else if ((i + offSetForPrint) % 7 == 0) {
+            console.log(week);
+            week = "";
+        } else if (i == month.days) {
+            console.log(week);
+            config.offSetLastMonth = (i + offSetForPrint) % 7;
             break;
         }
     }
-}
-
-function getLeftDaysFromOtherMonth(weekLength) {
-    console.log("Hello World")
 }
 
 function printCalenders() {
     for (let i = 0; i < config.months.length; i++) {
         printMonthName(config.months[i].name);
         printWeek();
-        printDays(config.months[i]);
+        printoffSet(config.offSetLastMonth, config.months[i]);
 
     }
 }
