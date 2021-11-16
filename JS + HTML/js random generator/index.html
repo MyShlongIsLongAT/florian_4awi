@@ -21,7 +21,6 @@
 
     <div class="buttons">
         <button onclick="generate()">Generate</button>
-        <button onclick="reset()">Reset</button>
     </div>
 
 
@@ -37,10 +36,6 @@
             let random = parseInt(Math.random() * (num2 - num1) + num1);
             //Output
             document.getElementById("output").innerHTML = "<h2>" + random + "</h2>";
-        }
-
-        function reset() {
-            location.reload();
         }
     </script>
 
