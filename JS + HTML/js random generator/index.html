@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h1>JS-Rechner</h1>
+    <div class="input">
+        <label for="num1">lowestNumber</label>
+        <input type="number" id="num1" value="1"><br>
+        <label for="num2">highestNumber</label>
+        <input type="number" id="num2" value="10"><br><br>
+    </div>
+
+    <div class="buttons">
+        <button onclick="generate()">Generate</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+
+    <div id="output">
+
+    </div>
+
+    <script>
+        function generate() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            //generating a number between num1 and num2
+            let random = parseInt(Math.random() * (num2 - num1) + num1);
+            //Output
+            document.getElementById("output").innerHTML = "<h2>" + random + "</h2>";
+        }
+
+        function reset() {
+            location.reload();
+        }
+    </script>
+
+</html>
