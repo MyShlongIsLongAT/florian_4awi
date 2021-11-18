@@ -1,8 +1,28 @@
 body {
-    background-color: lightblue;
+    background-color: gray;
     text-align: center;
 }
 
-ul {
+h1 {
+    font-family: arial;
+    font-weight: bold;
+}
+
+li {
+    font-family: arial;
     list-style: none;
+    background-color: white;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 30%;
+    margin-left: 35%;
+    padding: 5px;
+    text-align: left;
+}
+
+.checkbox {
+    background-color: green;
+    height: 15px;
+    width: 15px;
 }
