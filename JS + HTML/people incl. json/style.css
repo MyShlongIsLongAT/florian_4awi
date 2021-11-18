@@ -1,0 +1,28 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    background-color: aquamarine;
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.nameOfPeople {
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.nameOfPeople ul {
+    list-style: none;
+}
+
+.ageOfPeople {
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+}
