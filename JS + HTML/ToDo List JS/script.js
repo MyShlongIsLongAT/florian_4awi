@@ -1,5 +1,3 @@
-//var taskList = ["kochen", "sosi hü", "chemie lerna"];
-
 var taskList = {
     "tasks": [
 

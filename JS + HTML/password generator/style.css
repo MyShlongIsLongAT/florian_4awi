@@ -1,0 +1,12 @@
+.characters label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+    display: inline-block;
+}
+
+.slider label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+}
