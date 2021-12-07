@@ -13,24 +13,38 @@
 <body onload="init()">
 
     <div class="characters">
-        <input type="checkbox" id="numbers">
-        <label for="numbers">0-9</label>
-        <input type="checkbox" id="upper">
-        <label for="upper">upper</label>
-        <input type="checkbox" id="lower">
-        <label for="lower">lower</label>
-        <input type="checkbox" id="special">
-        <label for="special">special</label>
+        <p>Characters:</p>
+        <div class="lowerCase">
+            <input type="checkbox" id="lowerCase">
+            <label for="lower">a-z</label>
+        </div>
+        <div class="upperCase">
+            <input type="checkbox" id="upperCase">
+            <label for="upper">A-Z</label>
+        </div>
+        <div class="numbers">
+            <input type="checkbox" id="number">
+            <label for="numbers">0-9</label>
+        </div>
+        <div class="special">
+            <input type="checkbox" id="special">
+            <label for="special">Special</label>
+        </div>
     </div>
 
     <div class="slider">
-        <input type="range" oninput="onSliderInput()" min="8" max="20" value="13" id="sliderLength">
-        <label for="length">length</label>
+        <p>Length:</p>
         <div class="lengthAmount" id="lengthAmount"></div>
+        <input type="range" oninput="onSliderInput()" min="8" max="20" value="13" id="sliderLength">
+
+
     </div>
 
-
-    <div class="generatedPassword"></div>
+    <button onclick="getCharacterTypes()">Generate Password</button>
+    <div class="output">
+        <p>Password:</p>
+        <div id="generatedPassword"></div>
+    </div>
 </body>
 
 </html>
