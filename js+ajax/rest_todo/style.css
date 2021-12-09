@@ -1,0 +1,39 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.loading {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.loading button {
+    padding: 20px;
+    margin: 10px;
+    border-style: none;
+    background-color: orange;
+    color: white;
+}
+
+.loading button:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.content {
+    padding: 15px;
+}
+
+.content li {
+    background-color: brown;
+    padding: 15px;
+    margin-bottom: 1px;
+    color: white;
+    list-style: none;
+}
+
+.content li:hover {
+    cursor: pointer;
+    background-color: rgb(87, 13, 13);
+}
