@@ -1,0 +1,14 @@
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+    }
+    
+    .inputs {
+        padding: 10px;
+    }
+    
+    .output {
+        list-style: none;
+        margin-right: 100px;
+    }

@@ -1,0 +1,23 @@
+ul {
+    padding: 10px;
+    list-style-type: none;
+    border-style: dotted;
+    background-color: darkblue;
+}
+
+li {
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.team {
+    border-style: inset;
+    background-color: aquamarine;
+}
+
+h1 {
+    font-family: arial;
+}
