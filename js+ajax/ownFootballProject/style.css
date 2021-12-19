@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #E86868;
+    background-color: #B9C0D5;
 }
 
 .wrapper {
@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color: #d20515;
+    background-color: #E97A7A;
     height: 100px;
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -68,6 +68,8 @@ body {
     margin-bottom: 20px;
 }
 
+/*Teams Site*/
+
 .team table {
     display: flex;
     list-style: none;
@@ -106,6 +108,85 @@ body {
 }
 
 .team th:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*Player Site*/
+
+.players table {
+    display: flex;
+    list-style: none;
+    border-collapse: separate;
+}
+
+.players td {
+    border: solid 1px lightgray;
+    border-style: solid none;
+    text-align: center;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.players td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.players td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.players th:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.players th:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*Scorers Site*/
+.scorers table {
+    display: flex;
+    list-style: none;
+    border-collapse: separate;
+}
+
+.scorers td {
+    border: solid 1px lightgray;
+    border-style: solid none;
+    text-align: center;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.scorers td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.scorers td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.scorers th:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.scorers th:last-child {
     border-right-style: solid;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;

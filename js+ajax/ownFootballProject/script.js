@@ -45,7 +45,7 @@ function getPlayers(teamId) {
         })
         .then(function(data) {
             let html = "";
-            html += "<div class='team'>";
+            html += "<div class='players'>";
             html += "<table>";
             html += "<tr class='separator'><tr>"
             data.squad.forEach(element => {
@@ -77,13 +77,13 @@ function getScorer() {
         })
         .then(function(data) {
             let html = "";
-            html += "<div class='team'>";
+            html += "<div class='scorers'>";
             html += "<table>";
             html += "<tr class='separator'><tr>"
             data.scorers.forEach(element => {
                 html += "<tr>"
                 html += "<td><li>" + element.player.name + "</li></td>";
-                //html += "<td><li>" + element.player.team.name + "</li></td>";
+                //html += "<td><li>" + element.player.team + "</li></td>";
                 html += "<td><li>" + element.player.position + "</li></td>";
                 html += "<td><li>" + element.numberOfGoals + "</li></td>";
                 html += "</tr>"
