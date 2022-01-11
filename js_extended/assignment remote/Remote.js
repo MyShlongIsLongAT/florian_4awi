@@ -13,8 +13,8 @@ export default class Remote{
     turnOn(){
         if(!this.isOn){
             console.log("turned on...")
-            this.battery1.chargingStatus=this.battery1.chargingStatus-5;
-            this.battery2.chargingStatus=this.battery2.chargingStatus-5;
+            this.battery1.chargingStatus-=5;
+            this.battery2.chargingStatus-=5;
             this.isOn=true;
         }
         else{
